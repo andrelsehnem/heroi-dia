@@ -1,0 +1,107 @@
+import { StyleSheet } from "react-native";
+import { COLORS } from "../constants/theme";
+
+export default StyleSheet.create({
+  safeArea: { flex: 1, backgroundColor: COLORS.ink },
+  loading: {
+    flex: 1,
+    backgroundColor: COLORS.ink,
+    alignItems: "center",
+    justifyContent: "center",
+    gap: 16,
+  },
+  loadingText: {
+    color: COLORS.paper,
+    fontFamily: "Courier New",
+    letterSpacing: 2,
+    fontSize: 12,
+  },
+  page: { flexGrow: 1, paddingBottom: 40, backgroundColor: COLORS.ink },
+  shell: {
+    width: "100%",
+    maxWidth: 880,
+    alignSelf: "center",
+    paddingBottom: 28,
+  },
+  winPanel: {
+    backgroundColor: COLORS.green,
+    padding: 20,
+    marginHorizontal: 20,
+    marginBottom: 22,
+    borderBottomWidth: 5,
+    borderBottomColor: "#4d8060",
+  },
+  winEyebrow: {
+    color: "#14331e",
+    fontFamily: "Courier New",
+    fontWeight: "900",
+    letterSpacing: 1.4,
+    fontSize: 11,
+  },
+  winName: {
+    color: COLORS.ink,
+    fontFamily: "Georgia",
+    fontWeight: "900",
+    fontSize: 31,
+    marginTop: 5,
+  },
+  winSub: {
+    color: "#21462c",
+    fontFamily: "Courier New",
+    fontSize: 11,
+    marginTop: 4,
+  },
+  historyHeader: {
+    marginHorizontal: 20,
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "baseline",
+    marginBottom: 8,
+  },
+  historyTitle: {
+    color: COLORS.yellow,
+    fontFamily: "Anton_400Regular",
+    letterSpacing: 0.5,
+    fontSize: 16,
+  },
+  historyCount: {
+    color: COLORS.muted,
+    fontFamily: "Courier New",
+    fontSize: 10,
+    fontWeight: "700",
+  },
+  emptyState: {
+    marginHorizontal: 20,
+    paddingVertical: 34,
+    borderWidth: 2,
+    borderColor: COLORS.paper,
+    borderStyle: "dashed",
+    alignItems: "center",
+  },
+  emptySlash: {
+    color: COLORS.yellow,
+    fontFamily: "Courier New",
+    fontSize: 25,
+    fontWeight: "900",
+  },
+  emptyTitle: {
+    color: COLORS.paper,
+    fontFamily: "Georgia",
+    fontSize: 19,
+    marginTop: 5,
+  },
+  emptyText: {
+    color: COLORS.muted,
+    fontFamily: "Courier New",
+    fontSize: 11,
+    marginTop: 4,
+  },
+  footer: {
+    color: "#536363",
+    fontFamily: "Courier New",
+    letterSpacing: 1,
+    fontSize: 9,
+    textAlign: "center",
+    marginTop: 25,
+  },
+});
